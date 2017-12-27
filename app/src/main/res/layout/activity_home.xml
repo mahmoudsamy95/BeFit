@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmo.befit.HomeActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="130dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/steps"
+        android:onClick="stepCounter"
+        app:layout_constraintBottom_toTopOf="@+id/btcheckup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton2"
+        android:layout_width="143dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/calories"
+        android:onClick="calCalc"
+        app:layout_constraintBottom_toTopOf="@+id/btPillReminder"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btPillReminder"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/pill"
+        android:onClick="pillReminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btcheckup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <Button
+        android:id="@+id/btcheckup"
+        android:layout_width="136dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/checkup"
+        android:onClick="checkup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btPillReminder"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BeFit</string>
+    <string name="facebook_app_id">1757951104511199</string>
+    <string name="fb_login_protocol_scheme">fb1757951104511199</string>
+    <string name="minimum_password">8</string>
+    <string name="auth_failed">Faild</string>
+
+</resources>
